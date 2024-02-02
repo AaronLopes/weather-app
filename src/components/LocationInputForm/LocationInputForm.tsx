@@ -5,7 +5,7 @@ interface LocationInputFormProps {
   onLocationSubmit: (locationKey: string) => void;
 }
 
-const LocationInputForm: React.FC<LocationInputFormProps> = ({ onLocationSubmit }) => {
+const LocationInputForm = ({ onLocationSubmit } : LocationInputFormProps) => {
     const [location, setLocation] = useState('');
 
     const handleSubmit = async (e: React.FormEvent) => {

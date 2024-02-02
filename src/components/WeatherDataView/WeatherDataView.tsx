@@ -6,7 +6,7 @@ interface WeatherDataViewProps {
     data: WeatherData | null;
 }
 
-const WeatherDataView: React.FC<WeatherDataViewProps> = ({ data }) => {
+const WeatherDataView = ({ data } : WeatherDataViewProps) => {
     if (!data) {
         return <p>Loading...</p>;
       }
